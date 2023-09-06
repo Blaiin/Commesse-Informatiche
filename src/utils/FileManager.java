@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class FileManager {
 
-	private static final String absoluteFilePath = System.getProperty("user.dir") + File.separator + "output";
+	private static final String absoluteFilePath = System.getProperty("user.dir") + File.separator + "output" + File.separator;
 	private static final String PROGETTO_FILE = "Progetti.json";
 	private static final String PROGRAMMATORI_FILE = "Programmatori.json";
 	private static final String ANALISTI_FILE = "Analisti.json";

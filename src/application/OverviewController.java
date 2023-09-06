@@ -31,10 +31,13 @@ import com.google.gson.stream.JsonWriter;
 import utils.*;
 
 public class OverviewController implements Initializable {
-
+	
+	private static final String currentDirectory = System.getProperty("user.dir");
+    private static final String dynamicOutputPath = currentDirectory + File.separator + "output" + File.separator;
+    private static final String dynamicImagesPath = currentDirectory + File.separator + "images"+ File.separator;
 	protected List<Progetto> progettiTotali;
 	protected FileManager manager = new FileManager();
-	private Image icon = new Image("C:\\Users\\Utente\\Desktop\\Scrivania\\GitHub\\Commesse-Informatiche\\src\\resources\\images\\its3.png");
+	private Image icon = new Image(dynamicImagesPath + "its3.png");
 
 	@FXML
 	private ListView<Progetto> listaProgettiTotali;
@@ -121,7 +124,7 @@ public class OverviewController implements Initializable {
 		Gson gson = new GsonBuilder().registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
 				.setPrettyPrinting().create();
 		try (Writer writer = new FileWriter(
-				"C:\\Users\\Utente\\Desktop\\Scrivania\\Java\\Workspace\\Commesse_Informatiche\\output\\Progetti.json")) {
+				dynamicOutputPath + "Progetti.json")) {
 			//String json = gson.toJson(listaProgettiDaSalvare);
 			gson.toJson(listaProgettiDaSalvare, writer);
 			System.out.println("Progetti salvati.");
