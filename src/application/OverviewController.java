@@ -86,7 +86,7 @@ public class OverviewController implements Initializable {
 	}
 	public void apriDettagliAvanzatiProgettoTab(ActionEvent event) {
 		// Load the FXML file for the new scene
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/resources/DettagliAvanzatiProgettoPage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/resources/DettagliAvanzatiProgetto.fxml"));
         Parent root;
 		try {
 			root = fxmlLoader.load();
