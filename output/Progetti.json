@@ -1,6 +1,6 @@
 [
   {
-    "nomeProgetto": "Eskere",
+    "nomeProgetto": "Lavatrice",
     "dataInizio": "2023-08-01",
     "dataFine": "2023-08-13",
     "oreProgettoTotali": 100.0,
@@ -17,7 +17,7 @@
     "linguaggioProgetto": "JAVA"
   },
   {
-    "nomeProgetto": "Eskere2",
+    "nomeProgetto": "Condizionatore",
     "dataInizio": "2019-08-15",
     "dataFine": "2021-10-10",
     "oreProgettoTotali": 6300.0,
@@ -34,7 +34,7 @@
     "linguaggioProgetto": "DOT_NET"
   },
   {
-    "nomeProgetto": "Eskere3",
+    "nomeProgetto": "Microonde",
     "dataInizio": "2015-04-18",
     "dataFine": "2017-06-26",
     "oreProgettoTotali": 6400.0,
@@ -51,7 +51,7 @@
     "linguaggioProgetto": "CPP"
   },
   {
-    "nomeProgetto": "Lavatrice fra",
+    "nomeProgetto": "Lavatrice 2",
     "dataInizio": "1998-09-09",
     "dataFine": "1998-12-04",
     "oreProgettoTotali": 690.0,
